@@ -1,14 +1,35 @@
 <!DOCTYPE html>
 <html lang="fa">
 <head>
-<meta charset="UTF-8">
-<title>Polygon Area</title>
+    <meta charset="UTF-8">
+    <title>ماشین حساب ساده</title>
 </head>
 <body>
 
-<h1>به سایت آموزش مساحت چندضلعی خوش آمدید</h1>
+    <h1>ماشین حساب جمع دو عدد</h1>
 
-<p>Welcome to Polygon Area</p>
+    <p>عدد اول:</p>
+    <input type="number" id="num1">
+
+    <p>عدد دوم:</p>
+    <input type="number" id="num2">
+
+    <br><br>
+
+    <button onclick="jam()">جمع کن</button>
+
+    <h2 id="result">نتیجه:</h2>
+
+    <script>
+        function jam() {
+            let a = Number(document.getElementById("num1").value);
+            let b = Number(document.getElementById("num2").value);
+
+            let sum = a + b;
+
+            document.getElementById("result").innerHTML = "نتیجه: " + sum;
+        }
+    </script>
 
 </body>
 </html>
